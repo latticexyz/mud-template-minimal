@@ -6,16 +6,16 @@
   "scripts": {
     "----- EXTERNAL -----": "---------------------------",
     "prepare": "yarn mud codegen-libdeploy && yarn types",
-    "test": "(mv src/test/LibDeploy.sol src/test/LibDeploy.sol.bak && yarn mud codegen-libdeploy --out src/test && forge test || true) && mv src/test/LibDeploy.sol.bak src/test/LibDeploy.sol",
     "lint": "yarn prettier && yarn solhint",
-    "prettier": "prettier --write 'src/**/*.sol'",
-    "solhint": "solhint --config ./.solhint.json 'src/**/*.sol' --fix",
+    "test": "(mv src/test/LibDeploy.sol src/test/LibDeploy.sol.bak && yarn mud codegen-libdeploy --out src/test && forge test || true) && mv src/test/LibDeploy.sol.bak src/test/LibDeploy.sol",
     "start:anvil": "anvil -b 1 --block-base-fee-per-gas 0",
     "deploy:anvil": "wait-on tcp:8545 && yarn mud deploy-contracts --deployerPrivateKey 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
     "watch:anvil": "yarn deploy:anvil --watchSystems",
     "types": "forge build && yarn _dist && yarn mud types && yarn mud system-types",
     "----- INTERNAL -----": "---------------------------",
-    "_dist": "rimraf abi && mkdir abi && bash exports.sh && rimraf abi/*.metadata.json"
+    "_dist": "rimraf abi && mkdir abi && bash exports.sh && rimraf abi/*.metadata.json",
+    "prettier": "prettier --write 'src/**/*.sol'",
+    "solhint": "solhint --config ./.solhint.json 'src/**/*.sol' --fix"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",

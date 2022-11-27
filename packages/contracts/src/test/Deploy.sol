@@ -1,11 +1,9 @@
-// SPDX-License-Identifier: Unlicense
+// SPDX-License-Identifier: MIT 
 pragma solidity >=0.8.0;
 
 import { IDeploy } from "std-contracts/test/MudTest.t.sol";
 import { Vm } from "forge-std/Vm.sol";
 import { World } from "solecs/World.sol";
-
-// Generated from `deploy.json` via `mud codegen-libdeploy`
 import { LibDeploy, DeployResult } from "./LibDeploy.sol";
 
 contract Deploy is IDeploy {
