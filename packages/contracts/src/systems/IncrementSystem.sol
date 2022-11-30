@@ -16,11 +16,7 @@ contract IncrementSystem is System {
     LibMath.increment(c, entity);
   }
 
-  function executeTyped(
-    uint256 componentId,
-    uint256 entity,
-    bytes memory value // If value has length 0, the component is removed
-  ) public returns (bytes memory) {
-    return execute(abi.encode(componentId, entity, value));
+  function executeTyped(uint256 entity) public returns (bytes memory) {
+    return execute(abi.encode(entity));
   }
 }
