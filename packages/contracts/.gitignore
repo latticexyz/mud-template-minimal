@@ -7,5 +7,4 @@ deployments
 abi/
 types/
 broadcast/
-src/test/LibDeploy.sol
 .env
