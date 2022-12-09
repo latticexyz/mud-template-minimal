@@ -5,6 +5,13 @@ export default defineConfig({
     fs: {
       strict: false,
     },
+    proxy: {
+      '/rpc': {
+        target: 'http://localhost:8545/',
+        rewrite: () => '/',
+        ws: true,
+      },
+    },
   },
   optimizeDeps: {
     esbuildOptions: {

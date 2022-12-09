@@ -9,8 +9,8 @@ export const config: SetupContractConfig = {
     syncInterval: 5000,
   },
   provider: {
-    jsonRpcUrl: params.get("rpc") ?? "http://localhost:8545",
-    wsRpcUrl: params.get("wsRpc") ?? "ws://localhost:8545",
+    jsonRpcUrl: params.get("rpc") ?? `http://${window.location.host}/rpc`,
+    wsRpcUrl: params.get("wsRpc") ?? `ws://${window.location.host}/rpc`,
     chainId: Number(params.get("chainId")) || 31337,
   },
   privateKey: Wallet.createRandom().privateKey,
