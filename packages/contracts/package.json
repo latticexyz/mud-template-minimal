@@ -7,6 +7,7 @@
     "----- EXTERNAL -----": "---------------------------",
     "prepare": "mud types",
     "devnode": "mud devnode",
+    "gendeploy": "python3 script/gen_deploy.py",
     "test": "mud test",
     "types": "mud types",
     "dev": "mud deploy-contracts --dev --watch --openUrl http://localhost:3000?dev=true",
