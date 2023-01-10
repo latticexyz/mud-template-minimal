@@ -2,8 +2,8 @@
 pragma solidity >=0.8.0;
 
 // @NOTE: DO NOT EDIT!
-//        This file is a stub for LibDeploy.json to make imports work.
-//        The real LibDeploy.json is generated automatically when deploying
+//        This file is a stub for LibDeploy.sol to make imports work.
+//        The real LibDeploy.sol is generated automatically when deploying
 //        via `mud deploy` or testing via `mud test`
 
 import { World } from "solecs/World.sol";
