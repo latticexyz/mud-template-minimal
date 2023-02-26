@@ -519,6 +519,13 @@
   resolved "https://registry.yarnpkg.com/@latticexyz/network/-/network-1.30.1.tgz#5faea51d77c05cc31eedb36403b570a3cc7e0e54"
   integrity sha512-PKFD92mUVyJYo4bqNOZwrlMk3HMbunaoIrZ2nUAFOQH9Dld3xuHUPb4Ll6rL+WBniVtl+hHLh2N5uddJpCQx5w==
 
+"@latticexyz/noise@^1.34.0":
+  version "1.34.0"
+  resolved "https://registry.yarnpkg.com/@latticexyz/noise/-/noise-1.34.0.tgz#ce9c30d71181302240636ecb9bf358907a062b36"
+  integrity sha512-QZLKOy7+jedJQDESAp5cqqgLATPIZHykB33CUDLT3OFyF+JUu4e8jSvPZv/wwny15bJIYfd2BSEomsKZSxTkLA==
+  dependencies:
+    "@types/big-integer" "^0.0.31"
+
 "@latticexyz/recs@^1.30.1":
   version "1.30.1"
   resolved "https://registry.yarnpkg.com/@latticexyz/recs/-/recs-1.30.1.tgz#8cd6a487efb59d230c89f98420e842371ca8a67b"
@@ -687,6 +694,13 @@
   dependencies:
     lodash "^4.17.15"
     ts-essentials "^7.0.1"
+
+"@types/big-integer@^0.0.31":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@types/big-integer/-/big-integer-0.0.31.tgz#021c505b5d8ad592cb7ffcda7af88b4fc12d4995"
+  integrity sha512-nYrYenHwC07vTBXoQ8jUUi6sednNYHGQxh0ecvfWm46n3djgxxbe7AZIJVaGjzQaEQVEcH6KmB6VMt//vAP0AA==
+  dependencies:
+    big-integer "*"
 
 "@types/hast@^2.0.0":
   version "2.3.4"
@@ -995,6 +1009,11 @@ bech32@1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/bech32/-/bech32-1.1.4.tgz#e38c9f37bf179b8eb16ae3a772b40c356d4832e9"
   integrity sha512-s0IrSOzLlbvX7yp4WBfPITzpAU8sqQcpsmwXDiKwrG4r491vwCO/XpejasRNl0piBMe/DvP4Tz0mIS/X1DPJBQ==
+
+big-integer@*:
+  version "1.6.51"
+  resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.51.tgz#0df92a5d9880560d3ff2d5fd20245c889d130686"
+  integrity sha512-GPEid2Y9QU1Exl1rpO9B2IPJGHPSupF5GnVIP0blYvNOMer2bTvSWs1jGOUg04hTmu67nmLsQ9TBo1puaotBHg==
 
 binary-extensions@^2.0.0:
   version "2.2.0"
